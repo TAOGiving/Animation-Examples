@@ -10,7 +10,7 @@
   <body>
     <h1>Hello World</h1>
     <hr />
-    <h3>gsap.to(".star", { x: 400, duration: 3 });</h3>
+    <h3>gsap.to(".star", { x: 400, backgroundColor: "blue", duration: 3 });</h3>
     <div>
       <img
         src="images/Flag_of_California_Star.svg"
@@ -89,6 +89,30 @@
         alt="star"
         id="star"
         class="star9"
+      />
+    </div>
+
+    <hr />
+    <h3>
+      gsap.from(".star10", { x: 400, backgroundColor: "blue", duration: 3 });
+    </h3>
+    <div>
+      <img
+        src="images/Flag_of_California_Star.svg"
+        alt="star"
+        id="star"
+        class="star10"
+      />
+    </div>
+    <h3>
+      gsap.fromTo(".star11", { x: 200, y: 200 }, { x: 400, y: 0, duration: 3 });
+    </h3>
+    <div>
+      <img
+        src="images/Flag_of_California_Star.svg"
+        alt="star"
+        id="star"
+        class="star11"
       />
     </div>
     <script src="script.js"></script>
