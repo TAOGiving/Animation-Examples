@@ -14,3 +14,15 @@ gsap.to(".star9", { scaleY: 2, duration: 3 });
 
 gsap.from(".star10", { x: 400, backgroundColor: "blue", duration: 3 });
 gsap.fromTo(".star11", { x: 200, y: 200 }, { x: 400, y: 0, duration: 3 });
+
+//GSAP Delay
+gsap.to(".star12", { duration: 2, x: 600 });
+gsap.to(".star13", { duration: 2, x: 600, delay: 2 });
+
+//GSAP repeat
+gsap.to(".star14", { duration: 2, x: 600, repeat: 1 });
+gsap.to(".star15", { duration: 2, x: 600 });
+
+//GSAP yoyo
+gsap.to(".star16", { duration: 2, x: 600, repeat: 4, yoyo: true });
+gsap.to(".star17", { duration: 2, x: 600 });
