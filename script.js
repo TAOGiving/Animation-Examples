@@ -32,6 +32,9 @@ gsap.to(".star18", { duration: 3, x: 600 });
 gsap.to(".star19", { duration: 3, x: 600, ease: "linear" });
 
 //GSAP ease bounce
-gsap.to(".star20", { duration: 3, x: 600, ease: "bounce" });
-gsap.to(".star21", { duration: 3, x: 600, ease: "bounce.in" });
-gsap.to(".star22", { duration: 3, x: 600, ease: "bounce.inOut" });
+gsap.to(".star20", { duration: 3, x: 500, ease: "bounce" });
+gsap.to(".star21", { duration: 3, x: 500, ease: "bounce.in" });
+gsap.to(".star22", { duration: 3, x: 500, ease: "bounce.inOut" });
+gsap.to(".star23", { duration: 3, x: 500, ease: "elastic" });
+gsap.to(".star24", { duration: 3, x: 500, ease: "back" });
+gsap.to(".star25", { duration: 3, x: 500, ease: "back(6)" });
