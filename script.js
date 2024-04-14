@@ -26,3 +26,12 @@ gsap.to(".star15", { duration: 2, x: 600 });
 //GSAP yoyo
 gsap.to(".star16", { duration: 2, x: 600, repeat: 4, yoyo: true });
 gsap.to(".star17", { duration: 2, x: 600 });
+
+//GSAP ease
+gsap.to(".star18", { duration: 3, x: 600 });
+gsap.to(".star19", { duration: 3, x: 600, ease: "linear" });
+
+//GSAP ease bounce
+gsap.to(".star20", { duration: 3, x: 600, ease: "bounce" });
+gsap.to(".star21", { duration: 3, x: 600, ease: "bounce.in" });
+gsap.to(".star22", { duration: 3, x: 600, ease: "bounce.inOut" });
