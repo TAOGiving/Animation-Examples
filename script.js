@@ -44,3 +44,4 @@ gsap.to("#star2", { y: -10, stagger: 0.5 });
 gsap.to("#star3", { y: -25, stagger: { amount: 10 } });
 gsap.to("#star4", { y: -25, stagger: { each: 0.2, from: "end" } });
 gsap.to("#star5", { y: -25, stagger: { amount: 1, from: "center" } });
+gsap.to("#star6", { y: -25, stagger: { amount: 1, from: "edges" } });
