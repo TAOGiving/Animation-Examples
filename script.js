@@ -38,3 +38,9 @@ gsap.to(".star22", { duration: 3, x: 500, ease: "bounce.inOut" });
 gsap.to(".star23", { duration: 3, x: 500, ease: "elastic" });
 gsap.to(".star24", { duration: 3, x: 500, ease: "back" });
 gsap.to(".star25", { duration: 3, x: 500, ease: "back(6)" });
+
+//GSAP ease stagger
+gsap.to("#star2", { y: -10, stagger: 0.5 });
+gsap.to("#star3", { y: -25, stagger: { amount: 10 } });
+gsap.to("#star4", { y: -25, stagger: { each: 0.2, from: "end" } });
+gsap.to("#star5", { y: -25, stagger: { amount: 1, from: "center" } });
