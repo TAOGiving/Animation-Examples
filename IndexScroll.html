@@ -3,9 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
 
     <link rel="stylesheet" href="stylesScroll.css" />
     <title>Scroll Trigger</title>
@@ -22,10 +19,25 @@
       </div>
     </div>
     <div class="spacer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
     <script>
-      let tl = gsap.timeline();
+      gsap.registerPlugin(ScrollTrigger);
+      //GSAP animation
+      let tl = gsap.timeline({
+        ScrollTrigger: {
+          trigger: ".animated-element",
+          start: "top center",
+          end: "bottom center",
+          scrub: true,
+          markers: false,
+        },
+      });
 
       tl.to(".animated-element", { x: 800 });
+
       //Scroll Smother from Github search Lenis
       const lenis = new Lenis();
 
