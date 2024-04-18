@@ -3,15 +3,15 @@ gsap.registerPlugin(ScrollTrigger);
 let tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".animated-element",
-    // start: "top center",
-    // end: "bottom center",
+    // start: "top center", //1st value is the element start, second is the viewport position
+    // end: "bottom center",//1st value is the element end, second is the viewport position
     // start: "35% 80%",
     // end: "bottom 80%",
     // start: "35% 80%",
     // end: "bottom 20%",
     start: "-50% center",
     end: "200% center",
-    scrub: true,
+    scrub: false, // is no longer linked with the scroll
     markers: true,
   },
 });
