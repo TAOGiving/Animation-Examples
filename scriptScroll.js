@@ -13,6 +13,7 @@ let tl = gsap.timeline({
     end: "200% center",
     scrub: false, // is no longer linked with the scroll
     markers: true,
+    toggleActions: "play reverse play complete", //on enter, on leave, on enter back (re-enter), on leave back.
   },
 });
 
