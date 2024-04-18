@@ -3,14 +3,16 @@ gsap.registerPlugin(ScrollTrigger);
 let tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".animated-element",
-    start: "top center",
-    end: "bottom center",
+    // start: "top center",
+    // end: "bottom center",
+    start: "35% 80%",
+    end: "bottom 80%",
     scrub: true,
     markers: true,
   },
 });
 
-tl.to(".animated-element", { x: 800, rotation: 360 });
+tl.to(".animated-element", { x: 800 });
 
 //Scroll Smother from Github search Lenis
 const lenis = new Lenis();
